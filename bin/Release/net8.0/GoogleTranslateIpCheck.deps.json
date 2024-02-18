@@ -1,0 +1,93 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "GoogleTranslateIpCheck/1.0.0": {
+        "dependencies": {
+          "Flurl.Http": "4.0.0-pre3",
+          "IPNetwork2": "2.6.609",
+          "Microsoft.DotNet.ILCompiler": "8.0.2",
+          "Microsoft.NET.ILLink.Tasks": "8.0.2"
+        },
+        "runtime": {
+          "GoogleTranslateIpCheck.dll": {}
+        }
+      },
+      "Flurl/3.0.7": {
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "assemblyVersion": "3.0.7.0",
+            "fileVersion": "3.0.7.0"
+          }
+        }
+      },
+      "Flurl.Http/4.0.0-pre3": {
+        "dependencies": {
+          "Flurl": "3.0.7"
+        },
+        "runtime": {
+          "lib/net6.0/Flurl.Http.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
+      "IPNetwork2/2.6.609": {
+        "runtime": {
+          "lib/net6.0/System.Net.IPNetwork.dll": {
+            "assemblyVersion": "2.6.609.0",
+            "fileVersion": "2.6.609.0"
+          }
+        }
+      },
+      "Microsoft.DotNet.ILCompiler/8.0.2": {},
+      "Microsoft.NET.ILLink.Tasks/8.0.2": {}
+    }
+  },
+  "libraries": {
+    "GoogleTranslateIpCheck/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Flurl/3.0.7": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W3zHc8m6/yqOAedHwpFQv5VT8t0W/jkS3AVlv1Tj520KDNjUa31at0zMc3XYJy8f9qdOmUcvSUarf6G2nK1ZIg==",
+      "path": "flurl/3.0.7",
+      "hashPath": "flurl.3.0.7.nupkg.sha512"
+    },
+    "Flurl.Http/4.0.0-pre3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2N01ftKNnl5dhPvEYITn+DhrPrpxL+i/725aBOJkLHAT3LdKliwnybJKDqUDVR8CbLgBf6IcfhYnaLU7fTq0dw==",
+      "path": "flurl.http/4.0.0-pre3",
+      "hashPath": "flurl.http.4.0.0-pre3.nupkg.sha512"
+    },
+    "IPNetwork2/2.6.609": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2fUva5kX9W8zCh8eGC73ABgzhunJEGkHpArawiNf56E3h+DZzSMAd7B03/A2flMDCS15poL/wgBQig7o674tJA==",
+      "path": "ipnetwork2/2.6.609",
+      "hashPath": "ipnetwork2.2.6.609.nupkg.sha512"
+    },
+    "Microsoft.DotNet.ILCompiler/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rGE3+673xn1iZJCoMIuUb9lhqje4DiCB+qTyPAJ97Bw15c4N69ZbMAO/GJyxchaoLJCHIPXP52hwxEzqrllwCg==",
+      "path": "microsoft.dotnet.ilcompiler/8.0.2",
+      "hashPath": "microsoft.dotnet.ilcompiler.8.0.2.nupkg.sha512"
+    },
+    "Microsoft.NET.ILLink.Tasks/8.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hKTrehpfVzOhAz0mreaTAZgbz0DrMEbWq4n3hAo8Ks6WdxdqQhNPvzOqn9VygKuWf1bmxPdraqzTaXriO/sn0A==",
+      "path": "microsoft.net.illink.tasks/8.0.2",
+      "hashPath": "microsoft.net.illink.tasks.8.0.2.nupkg.sha512"
+    }
+  }
+}
