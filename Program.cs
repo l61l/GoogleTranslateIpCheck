@@ -11,7 +11,7 @@ using System.Text.RegularExpressions;
 const string configFile = "config.json";
 const string Host = "translate.googleapis.com";
 const string Host2 = "translate.google.com";
-const string Host3 = "translate-pa.google.com";
+const string Host3 = "translate-pa.googleapis.com";
 
 Console.WriteLine("如果支持IPv6推荐优先使用,使用参数 -6 启动");
 var config = new Config();
