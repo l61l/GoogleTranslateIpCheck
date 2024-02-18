@@ -16,17 +16,17 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: '8.0.x'  # 你可以根据需要选择 .NET 版本
+        dotnet-version: '5.0.x'  # 你可以根据需要选择 .NET 版本
 
     - name: Restore dependencies
       run: dotnet restore
 
-    - name: Publish self-contained executable
-      run: dotnet publish -c Release -r win-x64 --self-contained true
-      # 这里将生成的可执行文件发布到 bin/Release/net5.0/win-x64/publish/ 目录下
+    - name: Publish self-contained executable with bundled dependencies
+      run: dotnet publish -c Release -r win-x64 --self-contained true /p:PublishSingleFile=true /p:IncludeNativeLibrariesForSelfExtract=true
+      # 这里将生成的可执行文件发布到 bin/Release/net5.0/win-x64/publish/ 目录下，并包含了所有依赖的 DLL 文件
 
     - name: Publish Artifact
       uses: actions/upload-artifact@v2
       with:
         name: my-app  # Artifact 的名称
-        path: ./ # 指定生成文件的路径，根据实际情况修改
+        path: ./bin/Release/net5.0/win-x64/publish/  # 指定生成文件的路径，根据实际情况修改
